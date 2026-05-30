@@ -153,7 +153,7 @@ export default function Navbar() {
               padding: "2rem 1.5rem",
               display: "flex",
               flexDirection: "column",
-              gap: "0.5rem",
+              gap: "1rem",
             }}
           >
             {navLinks.map((link, i) => (
