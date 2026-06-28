@@ -19,7 +19,7 @@ const projectsData = [
     title: "LostnFound App",
     description:
       "A community-driven mobile platform for reporting and finding lost items with real-time notifications and location tracking.",
-    image: "/projects/lostnfound.jpg",
+    image: "/projects/lostnfound.png",
     link: "https://github.com/itsmeandra/LostnFound-App",
     tech: [
       {
@@ -36,7 +36,7 @@ const projectsData = [
     title: "Smart Blind Stick IoT",
     description:
       "Assistive technology using ultrasonic sensors and GPS to help visually impaired individuals navigate safely with haptic feedback.",
-    image: "/projects/blindstick.jpg",
+    image: "/projects/blindstick.png",
     link: "https://github.com/itsmeandra/Smart-Blind-Stick-IoT",
     tech: [
       {
@@ -49,7 +49,7 @@ const projectsData = [
     title: "Smart Bell ESP32-CAM",
     description:
       "A security IoT doorbell featuring face detection and remote monitoring via a dedicated web interface.",
-    image: "/projects/smartbell.jpg",
+    image: "/projects/smartdoorbell.png",
     link: "https://github.com/itsmeandra/Smart-bell-ESP32-CAM",
     tech: [
       {
@@ -62,7 +62,7 @@ const projectsData = [
     title: "BeresIn App",
     description:
       "A task management system designed for collaborative teams to streamline workflows and track project milestones efficiently.",
-    image: "/projects/beresin.jpg",
+    image: "/projects/beresin.png",
     link: "https://github.com/itsmeandra/BeresIn-App",
     tech: [
       {
