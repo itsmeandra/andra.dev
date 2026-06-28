@@ -2,6 +2,8 @@ import MainLayout from "./layouts/MainLayout";
 import Hero from "./components/Hero";
 import TechStack from "./components/TechStack";
 import GithubActivity from "./components/GithubActivity";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
@@ -22,6 +24,12 @@ export default function App() {
 
         {/* Tech Stack */}
         <GithubActivity />
+
+        {/* Project */}
+        <Projects />
+
+        {/* Contact */}
+        <Contact />
         
       </MainLayout>
     </>
