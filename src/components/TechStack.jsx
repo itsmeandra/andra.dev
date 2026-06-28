@@ -89,7 +89,7 @@ export default function TechStack() {
               variants={itemVariants}
               whileHover={{
                 y: -3,
-                borderColor: "var(--color-text-secondary)",
+                borderColor: "var(--color-accent)",
                 backgroundColor: "rgba(255, 255, 255, 0.03)",
               }}
               style={{
