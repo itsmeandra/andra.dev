@@ -28,9 +28,7 @@ export default function GithubActivity() {
         currentStreak++; // Jika ada kontribusi, tambah streak
       } else {
         // Jika hari ini belum ada kontribusi, jangan putus streak kemarin
-        if (i === lastIndex) {
-          continue;
-        }
+        if (i === lastIndex) continue;
         // Jika hari sebelumnya 0 kontribusi, streak benar-benar putus
         break;
       }
@@ -55,11 +53,8 @@ export default function GithubActivity() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
+          className="github-activity-wrapper"
           style={{
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            gap: "1.25rem",
             backgroundColor: "var(--color-bg-elevated)",
             border: "1px solid var(--color-border-base)",
             borderRadius: "12px",
@@ -68,17 +63,10 @@ export default function GithubActivity() {
         >
           {/* ── Profil & Streak Dinamis ── */}
           <div
+            className="streak-card"
             style={{
               backgroundColor: "var(--color-bg-surface)",
               borderRadius: "8px",
-              padding: "0.625rem",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              minWidth: "80px",
-              gap: "1rem",
-              flexShrink: 0,
             }}
           >
             <span
@@ -140,17 +128,7 @@ export default function GithubActivity() {
           </div>
 
           {/* ── GitHub Calendar ── */}
-          <div
-            style={{
-              flex: 1,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              overflowX: "auto",
-              paddingBottom: "0.5rem",
-            }}
-            className="github-calendar-container"
-          >
+          <div className="github-calendar-container">
             <GitHubCalendar
               username="itsmeandra"
               theme={explicitTheme}
@@ -164,9 +142,53 @@ export default function GithubActivity() {
         </motion.div>
 
         <style>{`
+          .github-activity-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            width: 100%;
+          }
+
+          .streak-card {
+            width: 100%;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+          }
+          .github-calendar-container {
+            width: 100%;
+            overflow-x: auto;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 0.5rem;
+          }
+
           .github-calendar-container text {
             font-family: var(--font-mono) !important;
             fill: var(--color-text-secondary) !important;
+          }
+
+          @media (min-width: 660px) {
+            .github-activity-wrapper {
+              flex-direction: row; /* Berjejer dari kiri ke kanan */
+              align-items: center;
+              justify-content: flex-start;
+            }
+
+            .streak-card {
+              width: auto;
+              min-width: 120px;
+              flex-shrink: 0;
+            }
+
+            .calendar-container {
+              flex: 1;
+              justify-content: center;
+            }
           }
         `}</style>
       </div>
