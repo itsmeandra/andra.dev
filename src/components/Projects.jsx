@@ -16,10 +16,10 @@ const cardVariants = {
 
 const projectsData = [
   {
-    title: "LostnFound App",
+    title: "Lost n Found",
     description:
-      "A community-driven mobile platform for reporting and finding lost items with real-time notifications and location tracking.",
-    image: "/projects/lostnfound.png",
+      "An Android-based app for reporting and locating lost items, featuring real-time notifications and location tracking.",
+    image: "/projects/lostnfound.webp",
     link: "https://github.com/itsmeandra/LostnFound-App",
     tech: [
       {
@@ -33,10 +33,10 @@ const projectsData = [
     ],
   },
   {
-    title: "Smart Blind Stick IoT",
+    title: "IoT Blind Stick",
     description:
       "Assistive technology using ultrasonic sensors and GPS to help visually impaired individuals navigate safely with haptic feedback.",
-    image: "/projects/blindstick.png",
+    image: "/projects/blindstick.webp",
     link: "https://github.com/itsmeandra/Smart-Blind-Stick-IoT",
     tech: [
       {
@@ -46,10 +46,10 @@ const projectsData = [
     ],
   },
   {
-    title: "Smart Bell ESP32-CAM",
+    title: "Smart Doorbell",
     description:
-      "A security IoT doorbell featuring face detection and remote monitoring via a dedicated web interface.",
-    image: "/projects/smartdoorbell.png",
+      "An IoT smart doorbell that captures visitor photos via ESP32-CAM and sends instant notifications to a Telegram chat when the button is pressed.",
+    image: "/projects/smartdoorbell.webp",
     link: "https://github.com/itsmeandra/Smart-bell-ESP32-CAM",
     tech: [
       {
@@ -59,10 +59,10 @@ const projectsData = [
     ],
   },
   {
-    title: "BeresIn App",
+    title: "BeresIn",
     description:
-      "A task management system designed for collaborative teams to streamline workflows and track project milestones efficiently.",
-    image: "/projects/beresin.png",
+      "A task management system designed to manage daily tasks, which also integrates gamification (XP & Levels) and Focus Mode (Pomodoro Timer) to boost user productivity.",
+    image: "/projects/beresin.webp",
     link: "https://github.com/itsmeandra/BeresIn-App",
     tech: [
       {
