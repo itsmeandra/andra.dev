@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Section } from "../layouts/MainLayout";
-import avatar from "../assets/avatar.png";
+import avatar from "../assets/avatar.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -42,6 +42,7 @@ export default function Hero() {
             <img
               src={avatar}
               alt="Juliandra Saputra"
+              fetchpriority="high"
               style={{
                 width: "100%",
                 height: "100%",

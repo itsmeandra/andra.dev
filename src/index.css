@@ -14,8 +14,8 @@
 
   /* Text */
   --color-text-primary: #ffffff;
-  --color-text-secondary: #a1a1aa; /* zinc-400 */
-  --color-text-muted: #71717a; /* zinc-500 */
+  --color-text-secondary: #b8b8c0; /* zinc-400 */
+  --color-text-muted: #94949e; /* zinc-500 */
 
   /* Accent */
   --color-accent: #61dafb; /* React cyan */
